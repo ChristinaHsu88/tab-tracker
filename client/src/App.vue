@@ -1,25 +1,13 @@
 <template>
   <div id="app">
-    <v-app>
-      <page-header />
-      
-      <main>
-        <v-container fluid>
-          <router-view></router-view>
-        </v-container>
-      </main>
-    </v-app>
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import PageHeader from '@/components/Header.vue'
-
 export default {
-  name: 'app',
-  components: {
-    PageHeader
-  }
+  name: 'App'
 }
 </script>
 
@@ -31,9 +19,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-.danger-alert {
-  color: red;
 }
 </style>
